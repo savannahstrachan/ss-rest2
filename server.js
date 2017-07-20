@@ -1,11 +1,11 @@
-const express = require('express');  //naming variables basically
-const app = express();
-const port = 3000 ;
-const bodyParser = require('body-parser');
-const mongoose = require('mongoose');
+const express = require('express')  //naming variables basically
+const app = express()
+const port = 3000 
+const bodyParser = require('body-parser')
+const mongoose = require('mongoose')
 
 app.use(bodyParser.urlencoded({ extended: false }))
-app.use(bodyParser.json())
+app.use(bodyParser.json());
 
 
 
@@ -76,6 +76,8 @@ app.post('/restaurants', function(request, response) {
 		};
 });
 });
+
+app.use(express.static('public'));
 
 
 // app.post('/firstname', function (req, res){
