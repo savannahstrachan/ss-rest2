@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "This is the node project",
   "main": "server.js",
-   "scripts": {
+  "scripts": {
     "start": "node server.js"
   },
   "author": "Bill and Savannah",
