@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "This is the node project",
   "main": "server.js",
+   "scripts": {
+    "start": "node server.js"
+  },
   "author": "Bill and Savannah",
   "dependencies": {
     "body-parser": "^1.15.2",
