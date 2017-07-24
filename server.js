@@ -66,8 +66,9 @@ var Restaurant = mongoose.model('restaurants', RSchema);
 // });
 
 app.post('/restaurants', function(request, response) {  
-	console.log(request.body.hunger);
-	Restaurant.find({hunger: (request.body.hunger)},function(err, Restaurant){
+	console.log(request.body);
+
+	Restaurant.find(request.body,function(err, Restaurant){
 		if(err){
 			console.log(err)
 		}else{
