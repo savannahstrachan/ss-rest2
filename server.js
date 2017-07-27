@@ -50,7 +50,7 @@ app.post('/restaurants', function (req, res){
 	restaurant.save(function(err){
 		console.log(restaurant)
 		
-			};
+			})
 });
 
 // 	});
