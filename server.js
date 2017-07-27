@@ -42,16 +42,16 @@ var RSchema = new mongoose.Schema ({
 
 var Restaurant = mongoose.model('restaurants', RSchema);
 
-// app.post('/restaurants', function (req, res){
-// 	console.log("/restaurant endpoint getting hit");
+app.post('/restaurants', function (req, res){
+	console.log("/restaurant endpoint getting hit");
 	
-// 	var restaurant = new Restaurant(req.body);
+	var restaurant = new Restaurant(req.body);
 
-// 	restaurant.save(function(err){
-// 		console.log(restaurant)
-// 		
-// 			};
-// });
+	restaurant.save(function(err){
+		console.log(restaurant)
+		
+			};
+});
 
 // 	});
 
