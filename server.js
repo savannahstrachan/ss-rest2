@@ -42,7 +42,7 @@ var RSchema = new mongoose.Schema ({
 
 var Restaurant = mongoose.model('restaurants', RSchema);
 
-app.post('/restaurants', function (req, res){
+app.get('/restaurants', function (req, res){
 	console.log("/restaurant endpoint getting hit");
 	
 	var restaurant = new Restaurant(req.body);
