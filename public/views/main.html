@@ -1,0 +1,71 @@
+
+
+ <div class="jumbotron">
+  <h1>Your quick guide to local eats</h1>
+  <p class="lead">Pick a category below and quit thinking so hard!</p>
+</div> 
+
+
+
+ <div class="row marketing">
+  <div class="col-lg-4" >
+
+    <div class = "panel ss-panel">
+      <a ng-click="hunClick()"><h4>How hungry are you?</h4></a> 
+   </div>
+      
+      <div class="radio ss-acc" ng-show = "showHun=='hungry'">
+        <label><input type="radio" value="6" ng-model="formData.hunger">1</input></label>
+        <label><input type="radio" value="5" ng-model="formData.hunger">2</input></label>
+        <label><input type="radio" value="4" ng-model="formData.hunger">3</input></label>
+        <label><input type="radio" value="3" ng-model="formData.hunger">4</input></label>
+        <label><input type="radio" value="2" ng-model="formData.hunger">5</input></label>
+        <label><input type="radio" value="1" ng-model="formData.hunger">6</input></label><br>
+        <button id="submit" type="button" class="btn ss_btn" ng-click="myFunc()">SUBMIT</button> 
+      </div>
+
+   
+
+
+       <div class = "panel ss-panel">
+      <a ng-click="fanClick()"><h4>How fancy are you?</h4></a> 
+   </div>
+      
+      <div class="radio ss-acc" ng-show = "showFan=='fancy'">
+        <label><input type="radio" value="1" ng-model="formData.fancy">1</input></label>
+        <label><input type="radio" value="2" ng-model="formData.fancy">2</input></label>
+        <label><input type="radio" value="3" ng-model="formData.fancy">3</input></label>
+        <label><input type="radio" value="4" ng-model="formData.fancy">4</input></label>
+        <label><input type="radio" value="5" ng-model="formData.fancy">5</input></label>
+        <label><input type="radio" value="6" ng-model="formData.fancy">6</input></label><br>
+        <button id="submit" type="button" class="btn ss_btn" ng-click="myFunc()">SUBMIT</button> 
+      </div>
+
+
+   
+          <div class = "panel ss-panel">
+      <a ng-click="monClick()"><h4>How much money do you want to spend?</h4></a> 
+   </div>
+      
+       <div class="radio ss-acc" ng-show = "showMon=='money'">
+        <label><input type="radio" value="1" ng-model="formData.price">1</input></label>
+        <label><input type="radio" value="2" ng-model="formData.price">2</input></label>
+        <label><input type="radio" value="3" ng-model="formData.price">3</input></label>
+        <label><input type="radio" value="4" ng-model="formData.price">4</input></label>
+        <label><input type="radio" value="5" ng-model="formData.price">5</input></label>
+        <label><input type="radio" value="6" ng-model="formData.price">6</input></label><br>
+        <button id="submit" type="button" class="btn ss_btn" ng-click="myFunc()">SUBMIT</button> 
+      </div>
+
+       
+
+
+</div>
+</div>
+</div>
+
+
+     <div class = "panel ss-panel">
+      <a ng-click='dispClick(blake)'> <h1 ng-model= "dispData"> {{ blake.name }} </h1></a> 
+   </div>
+

@@ -1,3 +1,5 @@
+body { padding-top:30px; }
+
 /* Space out content a bit */
 body {
   padding-top: 20px;
@@ -84,7 +86,7 @@ body {
 }
 
 h4 {
-  font-size: 40px;
+  font-size: 50px;
 }
 
 h1 {
@@ -105,3 +107,53 @@ border-radius: 10px;
 
 
 }
+
+a {
+
+  font-size: 14px;
+  font-color: black;
+
+}
+
+a:hover {
+  color: rgb(89, 92, 96);
+  cursor: pointer;
+}
+
+.ss-panel {
+  display: block;
+  position: relative;
+
+}
+
+.ss-acc {
+  text-align: center;
+}
+
+}
+h3.accordion{
+    margin: 0;
+}
+.accordion a{
+    padding: 10px;
+    background: #ddd;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 1px;
+}
+.accordion-content{
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 1px 0;
+}
+
+#map {
+    height: 100%;
+  }
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
